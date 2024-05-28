@@ -13,7 +13,9 @@
     
     <div id="app">
         <h1>{{ message }}</h1>
-        <img :src="src" alt="calimero img" @click="graySwitch()">
+        <div class="container">
+            <img :src="src" alt="calimero img" @click="graySwitch()">
+        </div>
 
         <div class="flex">
             <p>Qui puoi modificare il testo dell'h1:</p>

@@ -1,4 +1,4 @@
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
     data() {
@@ -10,7 +10,11 @@ createApp({
     methods: {
         graySwitch: function (){
             let img = document.querySelector("img");
-            img.classList.toggle("gray")
+            img.classList.toggle("gray");
+            
+
+            let title = document.querySelector("h1");
+            title.classList.toggle("rainbow")
         }
     }
-}).mount('#app')
+}).mount('#app');

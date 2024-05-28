@@ -7,10 +7,43 @@
     display: flex;
 }
 
+.container{
+    width: 50rem;
+    object-fit: cover;
+    height: auto;
+    overflow: hidden;
+}
+
 p{
     margin-right: .5rem;
 }
 
+h1.rainbow {
+    animation: rainbow 5s linear infinite;
+}
+
 .gray {
     filter: grayscale(100%);
+    transform: scale(1.5);
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    20%{
+        color: yellow;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: blue;
+    }
+    80%{
+        color: purple;
+    }
+    100%{
+        color: red;
+    }
 }
