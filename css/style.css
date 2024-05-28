@@ -10,3 +10,7 @@
 p{
     margin-right: .5rem;
 }
+
+.gray {
+    filter: grayscale(100%);
+}
