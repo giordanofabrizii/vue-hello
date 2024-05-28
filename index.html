@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
@@ -14,6 +14,17 @@
     <div id="app">
         <h1>{{ message }}</h1>
         <img :src="src" alt="calimero img">
+
+        <div class="flex">
+            <p>Qui puoi modificare il testo dell'h1:</p>
+            <input type="text" v-model="message">
+        </div>
+
+        <div class="flex">
+            <p>Qui puoi modificare il link dell'immagine:</p>
+            <input type="text" v-model="src">
+        </div>
+
     </div>
 
     <script src="js/script.js"></script>
